@@ -9,8 +9,10 @@ def batch_badge_creator(name)
 end
 
 def assign_rooms(name)
-  name.map do |n, r|
-    "Hello, #{n}! You'll be assigned to room #{r}!"
+  counter = 0
+  name.map do |n|
+    "Hello, #{n}! You'll be assigned to room #{counter}!"
+    counter += 1
   end
 end
 
