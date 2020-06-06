@@ -10,7 +10,7 @@ end
 
 def assign_rooms(name)
   name.each_with_index.map do |n, i|
-    "Hello, #{n}! You'll be assigned to room #{i}!"
+    "Hello, #{n}! You'll be assigned to room #{i+1}!"
   end
 end
 
